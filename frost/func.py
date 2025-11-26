@@ -21,7 +21,7 @@ def load_weather_data(dept: str) -> pd.DataFrame:
     'LAT': 'float64',
     'LON': 'float64',
     'ALTI': 'float64',
-    'AAAAMMJJ': 'datetime64[ns]',
+    'AAAAMMJJ': 'string',
     'TN': 'float64',
     'TNSOL': 'float64',
     'TN50': 'float64',
