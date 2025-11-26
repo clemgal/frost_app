@@ -18,13 +18,13 @@ def load_weather_data(dept: str) -> pd.DataFrame:
     d = {
     'NUM_POSTE': 'string',
     'NOM_USUEL': 'string',
-    'LAT': 'string',
-    'LON': 'string',
-    'ALTI': 'string',
-    'AAAAMMJJ': 'string',
-    'TN': 'string',
-    'TNSOL': 'string',
-    'TN50': 'string',
+    'LAT': 'float64',
+    'LON': 'float64',
+    'ALTI': 'float64',
+    'AAAAMMJJ': 'datetime64[ns]',
+    'TN': 'float64',
+    'TNSOL': 'float64',
+    'TN50': 'float64',
     }
 
     df = pd.read_csv(path,
